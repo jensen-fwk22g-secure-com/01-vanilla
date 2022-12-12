@@ -1,0 +1,57 @@
+body {
+	font-size: 120%;
+	background-color: pink;
+}
+button {
+	font-size: 110%;
+	padding: 0.5em 2em;
+}
+input {
+	font-size: 110%;
+}
+
+p.highlight {
+	background-color: lightblue;
+	font-weight: bold;
+}
+.selected {
+	font-style: italic;
+}
+
+/* 
+1em = aktuell teckenstorlek
+ */
+button:hover {
+	cursor: pointer;
+}
+.container-row {
+	display: flex;
+}
+.container-row > input {
+	flex-grow: 1;
+}
+/* .container-row button { color: blue; } */
+/* Poäng: 012 -> id: 0, klass: 1, element: 2 */
+div button:hover {
+	color: gray;
+}
+/* Poäng: 011 */
+button:hover {
+	color: red;
+}
+button {
+	color: yellow;
+}
+/* 
+x   y   Alla y som har x som ANCESTOR
+x > y   Alla y som har x som PARENT
+x + y   
+*/
+
+/* CSS specificity
+1. Den regel som kommer SIST i CSS-filen vinner (om de är lika specifika)
+2. Räkna poäng i tre kategorier:
+2.1. id
+2.2. klasser
+2.3. element
+*/
